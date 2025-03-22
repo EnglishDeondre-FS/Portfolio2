@@ -1,0 +1,106 @@
+/* Overall Carousel Styling */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1150px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Carousel Track (Sliding Animation) */
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Individual Card Styles */
+.carousel-card {
+  flex: 0 0 100%;
+  min-width: 100%;
+  min-height: 500px;
+  padding: 20px;
+  background: linear-gradient(135deg, #4c86eb, #5895d3);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 1, 0, 0.15);
+  text-align: center;
+  opacity: 0.95;
+  transition: opacity 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.carousel-card h3 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #eee;
+}
+
+.carousel-card p {
+  font-size: 2.1rem;
+  color: #ccc;
+  max-width: 80%;
+  padding: 20px;
+  margin-left: 80px;
+  line-height: 1.4;
+}
+
+/* Dots Navigation */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  background-color: #888;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.dot:active {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 600px) {
+  .carousel-container {
+    padding: 10px;
+  }
+
+  .carousel-card {
+    padding: 15px;
+  }
+
+  .carousel-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-card p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-button {
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+  }
+}
