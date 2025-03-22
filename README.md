@@ -3,7 +3,7 @@
 
 # Project Name: WDP2 Portfolio Project
 
-### Student First & Last Name
+### Deondre English
 
 🆔 &nbsp; 000#######
 
@@ -44,37 +44,34 @@ Post your link here, so you have easy access to it.
 <br>
 
 ### Milestone 2
-⚙️ Overview - Write overview here.
+⚙️ Overview - Created the main outline for everything to work properly mostly backend work.
 <br>
-🌵 Challenges - Write challenges here.
+🌵 Challenges - MongoDB is a pain in general.
 <br>
-🏆 Accomplishments - Write Accomplishments here.
+🏆 Accomplishments - Backend works with JWT authentication and sessions are limited to 1hr unless the user is being active on the site.
 <br>
-🔮 Next Steps - Write your next steps here.
-
+🔮 Next Steps - Fontend pretty stuff.
 <br>
 
 Please discuss the following:  
 #### Page #1   
-- Name  
-- Purpose   
+- Main  
+- Introduce the user.   
 
 #### Page #2   
-- Name  
-- Purpose   
+- Blog/:id  
+- Give the user content to look at and interact with.   
 
 #### Page #3   
-- Name  
-- Purpose   
+- Settings  
+- Edit your settings.  
 
 #### Page #4   
-- Name  
-- Purpose   
+- Dashboard  
+- Admin panel specific for user interaction.s 
 
 #### Remember that creating a project board, issues, and milestones is 50% of your grade!     
 If you are having trouble, contact your instructor ASAP, you might need to be part of the ePortoflio group to have better access.
-
-
 
 
 <br>
