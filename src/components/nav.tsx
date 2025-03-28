@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface BlogPost {
   id: string;
@@ -12,6 +12,7 @@ const Nav: React.FC = () => {
   const [userId, setUserId] = useState<string>("");
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
   const [filteredBlogPosts, setFilteredBlogPosts] = useState<BlogPost[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setInitialBlogPosts();
@@ -24,6 +25,7 @@ const Nav: React.FC = () => {
   }, [search, blogPosts]);
 
   const setInitialBlogPosts = () => {
+   
     const blogPostData = [
         {
             id: "1",
@@ -63,7 +65,7 @@ const Nav: React.FC = () => {
 
   const handleLogoutClick = (e) => {
     localStorage.removeItem('userId');
-    window.location.reload();
+    navigate('/');
   }
 
   return (

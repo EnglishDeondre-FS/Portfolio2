@@ -77,13 +77,13 @@ If you are having trouble, contact your instructor ASAP, you might need to be pa
 <br>
 
 ### Milestone 3
-⚙️ Overview - Write overview here.
+⚙️ Overview - Fixed some vital issues with the overall site, making navigation more intuitive, and making the process of reading a blog more fun.
 <br>
-🌵 Challenges - Write challenges here.
+🌵 Challenges - Server decieded to break, so I had to convert over to localStorage.
 <br>
-🏆 Accomplishments - Write Accomplishments here.
+🏆 Accomplishments - Managed to get the localStorage login flow working great!
 <br>
-🔮 Next Steps - Write your next steps here.
+🔮 Next Steps - Finish styling all of the pages. Make flow easier for the user.
 
 <br>
 
@@ -94,20 +94,24 @@ Please discuss the following:
 - Where in your code did you use it?    
 
 #### 1st Library
-- Link to the library    
+- Tailwindcss  
 - Link to library tutorial that you made already.    
 - Reason you chose this library.    
 - Where in your code is it used?    
 
 #### 2nd Library    
-- Link to the library    
-- Reason you chose this library.    
-- Where in your code is it used?    
+- [Link to the library    ](https://github.com/remarkjs/react-markdown)
+- Markdown based blog posts.    
+- MarkdownRenderer.tsx    
 
 #### Persistent Data    
-- Discuss if you have used MongoDB or Local Storage.    
-- How was it used in your code?    
+- userId, userSettings, blogPosts  
+- How was it used in your code? 
+- The userId is used as an auth layer
+- userSettings are used to conform the blog posts to the reading style of the user.
 - Where in your code is it used?    
+- userId, is used in the nav.tsx
+- userSettings are used in the markdownrenderer
 
 
 
@@ -154,7 +158,7 @@ Please discuss the following:
 -   Node/Express Backend
 -   A Mongo DB Element OR Local Storage for persistent data
 -   Connect to at least 1 free API
--   The project must use at least 2 different libraries, not including React itself
+-   The project must use at least 2 differen t libraries, not including React itself
     -   One of these libraries you will create a tutorial for in Exercise 01
 -   It should look visually appealing and must be easy for the end-user to use and understand. You may use Tailwind or any other front-end library/framework.
 
