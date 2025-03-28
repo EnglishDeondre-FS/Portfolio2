@@ -16,8 +16,8 @@ const Sidebar = () => (
           <Link to={`/blog/${post.path.replace(".md", "")}`} className="sidebar-link">
             {post.title}
           </Link>
-          <Link to='/'>
-            Home
+          <Link to='/' className="sidebar-link">
+            Back to Home Page
           </Link>
         </li>
       ))}

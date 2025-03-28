@@ -37,7 +37,7 @@ const ContentCarousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-    }, 5000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);
