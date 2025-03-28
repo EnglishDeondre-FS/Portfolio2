@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface UserData {
   id: string;
@@ -9,6 +10,7 @@ const LoginPage: React.FC = () => {
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [error, setError] = useState<string>("");
+  const navigate = useNavigate();
 
   const handleUsernameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(e.target.value);
@@ -34,7 +36,7 @@ const LoginPage: React.FC = () => {
       };
 
       localStorage.setItem("userId", userId);
-      window.location.href = `/dash/${userId}`;
+      navigate('/');
     } else {
       setError("Please enter a username and password.");
     }

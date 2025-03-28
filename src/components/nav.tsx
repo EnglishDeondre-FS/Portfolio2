@@ -66,6 +66,7 @@ const Nav: React.FC = () => {
   const handleLogoutClick = (e) => {
     localStorage.removeItem('userId');
     navigate('/');
+    window.location.reload();
   }
 
   return (
@@ -108,6 +109,12 @@ const Nav: React.FC = () => {
             className="text-white hover:text-gray-300 bg-slate-500 p-2 ml-4 rounded-sm"
           >
             Blog
+          </Link>
+          <Link
+            to={`/about`}
+            className="text-white hover:text-gray-300 bg-slate-500 p-2 ml-4 rounded-sm"
+          >
+            About me
           </Link>
           <button className='bg-red-400 ml-4' onClick={handleLogoutClick}>
             Logout

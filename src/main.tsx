@@ -6,6 +6,7 @@ import App from "./App.tsx";
 import {Blog, BlogPost } from "./pages/Blog.tsx";
 import Dashboard from "./pages/Dashboard.tsx";
 import LoginPage from "./pages/Login.tsx";
+import AboutPage from "./pages/About.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/dash/:slug" element={<Dashboard />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path='/about' element={<AboutPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

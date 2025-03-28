@@ -1,7 +1,5 @@
-import Button from "./components/button";
 import "./style/home.css";
 import ContentCarousel from "./components/contentCarosel";
-import Nav from "./components/nav";
 import Header from "./components/header";
 
 function App() {
