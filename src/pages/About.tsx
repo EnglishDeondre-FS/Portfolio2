@@ -33,7 +33,7 @@ const AboutPage = () => {
             Perspective is everything!
           </p>
           <p>
-            Currently I'm working on <a href="/"></a> a library to make rendering 3d on the web simple, 
+            Currently I'm working on <a href="https://github.com/deondreE/leaf-js">Leafjs</a> a library to make rendering 3d on the web simple, 
             and data oriented rather then the traditional object oriented.
           </p>
 
