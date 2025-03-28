@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+
 type ButtonProps = {
   innerText: string;
   reaction: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  link?: string;
 };
 
 /** Button with uniform styles,
@@ -9,7 +12,11 @@ type ButtonProps = {
   Reaction: OnClick reaction todo when the event happens.
 */
 const Button: React.FC<ButtonProps> = (props) => {
-  return <button onClick={props.reaction}>{props.innerText}</button>;
+  return ( 
+    <button onClick={props.reaction}>
+      {props.link ? <Link to={props.link}>{props.innerText}</Link> : props.innerText}
+    </button>
+  );
 };
 
 export default Button;

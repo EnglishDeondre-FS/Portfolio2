@@ -1,22 +1,9 @@
 import Button from "./components/button";
 import "./style/home.css";
 import ContentCarousel from "./components/contentCarosel";
-import { redirect, useNavigate } from "react-router-dom";
+import { redirect } from "react-router-dom";
 
 function App() {
-  const navigate = useNavigate();
-
-  const checkLoginState = (): boolean => {
-    const uData = JSON.parse(localStorage.getItem("uData")!);
-
-  console.log('call');
-  
-    if (uData.state == true) {
-      return true;
-    }
-
-    return false;
-  };
 
   return (
     <>
@@ -24,23 +11,6 @@ function App() {
         {/* Header */}
         <div className="site_header">
           <h1>Deondre's Corner</h1>
-          {checkLoginState() ? (
-            <Button
-              innerText="Log out"
-              reaction={(e) => {
-                e.preventDefault();
-                redirect("/");
-              }}
-            />
-          ) : (
-            <Button
-              innerText="Login"
-              reaction={(e) => {
-                e.preventDefault();
-                navigate("/login");
-              }}
-            />
-          )}
         </div>
         <div className="site_description">
           <h2>Welcome</h2>
@@ -56,6 +26,7 @@ function App() {
             Are you ready ?
             <br />
             <Button
+              link="/blog/rendering"
               reaction={(e) => {
                 e.preventDefault();
               }}
