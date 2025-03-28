@@ -3,7 +3,7 @@ const Dashboard: React.FC = () => {
     <div>
       <span>User settings</span>
       <div>
-        <div
+        <div></div>
       </div>
       <span>User Progress</span>
       <p>Progress of the user through the specific blog posts.</p>
