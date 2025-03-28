@@ -1,17 +1,15 @@
 import Button from "./components/button";
 import "./style/home.css";
 import ContentCarousel from "./components/contentCarosel";
-import { redirect } from "react-router-dom";
+import Nav from "./components/nav";
+import Header from "./components/header";
 
 function App() {
 
   return (
     <>
       <div className="g_container">
-        {/* Header */}
-        <div className="site_header">
-          <h1>Deondre's Corner</h1>
-        </div>
+        <Header /> 
         <div className="site_description">
           <h2>Welcome</h2>
           <span>
@@ -22,17 +20,6 @@ function App() {
             process so the aim is to teach as we go through the content.
             Allowing for the both of use to learn!
           </span>
-          <h1>
-            Are you ready ?
-            <br />
-            <Button
-              link="/blog/rendering"
-              reaction={(e) => {
-                e.preventDefault();
-              }}
-              innerText="Continue >>>"
-            />
-          </h1>
         </div>
         <div className="c_container">
           <ContentCarousel />

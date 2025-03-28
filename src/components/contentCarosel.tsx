@@ -10,7 +10,7 @@ const cards: Card[] = [
   {
     title: "🚀 Innovation",
     content:
-      "See exmaples of how leaf-js can make the 3d web enviroment simpler and faster to prototype in.",
+      "See examples of how leaf-js can make the 3d web enviroment simpler and faster to prototype in.",
   },
   {
     title: "🎨 Content",
@@ -37,7 +37,7 @@ const ContentCarousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);

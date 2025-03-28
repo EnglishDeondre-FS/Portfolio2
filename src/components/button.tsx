@@ -4,6 +4,7 @@ type ButtonProps = {
   innerText: string;
   reaction: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   link?: string;
+  className?: string;
 };
 
 /** Button with uniform styles,
