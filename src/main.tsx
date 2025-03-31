@@ -10,15 +10,16 @@ import AboutPage from "./pages/About.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/dash/:slug" element={<Dashboard />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path='/about' element={<AboutPage />} />
-      </Routes>
-    </BrowserRouter>
-  </StrictMode>,
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/dash/:slug" element={<Dashboard />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path='/about' element={<AboutPage />} />
+          </Routes>
+        </BrowserRouter>
+    </StrictMode>
+ ,
 );

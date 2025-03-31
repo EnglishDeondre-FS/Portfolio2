@@ -5,6 +5,7 @@ import MarkdownRenderer from "../components/markdownRenderer";
 
 const blogPosts = [
   { title: "Rendering", path: "rendering.md" },
+  { title: "Leaf", path: "leafjs.md" },
 ];
 
 const Sidebar = () => (
@@ -16,11 +17,11 @@ const Sidebar = () => (
           <Link to={`/blog/${post.path.replace(".md", "")}`} className="sidebar-link">
             {post.title}
           </Link>
-          <Link to='/'>
-            Home
-          </Link>
         </li>
-      ))}
+      ))} 
+      <Link to='/' className='sidebar-list'>
+        Home
+      </Link>
     </ul>
   </div>
 );

@@ -1,9 +1,24 @@
 import "./style/home.css";
 import ContentCarousel from "./components/contentCarosel";
 import Header from "./components/header";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
+  const [fact, setFact] = useState('');
 
+  const getCatFact = () => {
+    axios.get('https://catfact.ninja/fact').then((res) => {
+      setFact(`Cat Fact: ${res.data.fact}`);
+    })
+
+    return fact;
+  }
+
+  useEffect(() => {
+    getCatFact();
+  }, []);
+  
   return (
     <>
       <div className="g_container">
@@ -18,6 +33,8 @@ function App() {
             process so the aim is to teach as we go through the content.
             Allowing for the both of use to learn!
           </span>
+          <hr />
+          <span className="mt-2">{fact}</span>
         </div>
         <div className="c_container">
           <ContentCarousel />
