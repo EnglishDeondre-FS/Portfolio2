@@ -94,13 +94,13 @@ Please discuss the following:
 - Where in your code did you use it?    
 
 #### 1st Library
-- Tailwindcss  
+- Axios
 - Link to library tutorial that you made already.    
-- Reason you chose this library.    
-- Where in your code is it used?    
+- Easy to use version of fetch.   
+- main page     
 
 #### 2nd Library    
-- [Link to the library    ](https://github.com/remarkjs/react-markdown)
+- [Link to the library](https://github.com/remarkjs/react-markdown)
 - Markdown based blog posts.    
 - MarkdownRenderer.tsx    
 
@@ -119,22 +119,23 @@ Please discuss the following:
 <br>
 
 ### Milestone 4
-⚙️ Overview - Write overview here.
+⚙️ Overview - Finished styles and content for the blog.
 <br>
-🌵 Challenges - Write challenges here.
+🌵 Challenges - Rendering text while the user can change it at any given time is annoying.
 <br>
-🏆 Accomplishments - Write Accomplishments here.
+🏆 Accomplishments - Hopefully filled all requirements
 <br>
-🔮 Next Steps - Write your next steps here.
+🔮 Next Steps - Add more blog posts.
 
 <br>
 
 Please discuss the following:  
-#### Changes
-- Discuss any changes or updates that you have made to your site since Milestone #3.
+#### ChangesS
+- Added an api about cats as a cool call to action on the main page.
+- Users can actually change there settings.
 
 #### Styling
-- Discuss the process you used to style your page.
+- Make it decently pretty while having a programmer art vibe.
 
 #### Link To Overview Video
 - Once it is created, put the link to your overview video of your site here.

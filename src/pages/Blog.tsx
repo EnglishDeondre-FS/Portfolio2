@@ -5,7 +5,6 @@ import MarkdownRenderer from "../components/markdownRenderer";
 
 const blogPosts = [
   { title: "Rendering", path: "rendering.md" },
-  { title: "Leaf", path: "leafjs.md" },
 ];
 
 const Sidebar = () => (
